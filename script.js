@@ -14,6 +14,10 @@ let currentSlide = 0;
 let timeoutId;
 
 const slides = [
+        {
+        text: "Curso de Griego del ministerio:<br><span class='highlight'>Vivos para Servir</span>, <span class='highlight'>Tips, semana 2</span> y <span>.",
+        animation: "fadeIn"
+    },
     {
         text: "Los sustantivos griegos tienen tres géneros:<br><span class='highlight'>Masculino</span>, <span class='highlight'>Femenino</span> y <span class='highlight'>Neutro</span>.",
         animation: "fadeIn"
