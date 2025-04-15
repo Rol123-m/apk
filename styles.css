@@ -4,7 +4,7 @@ body {
     background-color: #121212;
     color: #ffffff;
     font-family: 'Arial', sans-serif;
-    overflow: hidden;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 #logo-container {
@@ -15,7 +15,7 @@ body {
 }
 
 #logo-container img {
-    width: 100px;
+    width: 80px; /* Adjusted for smaller screens */
     height: auto;
 }
 
@@ -25,14 +25,14 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    width: 80%;
+    width: 90%; /* Adjusted for smaller screens */
 }
 
 .slide {
     opacity: 0;
-    font-size: 1.8rem;
-    line-height: 2.5rem;
-    margin-bottom: 20px;
+    font-size: 1.5rem; /* Reduced font size for better fit */
+    line-height: 2rem;
+    margin-bottom: 15px;
 }
 
 .highlight {
@@ -47,11 +47,11 @@ body {
 }
 
 table {
-    margin: 20px auto;
+    margin: 10px auto;
     border-collapse: collapse;
-    width: 80%;
+    width: 95%; /* Adjusted for smaller screens */
     color: #ffffff;
-    font-size: 1.2rem;
+    font-size: 1rem; /* Reduced font size */
 }
 
 table th, table td {
@@ -75,8 +75,8 @@ table td {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    padding: 10px 20px;
-    font-size: 1.2rem;
+    padding: 8px 16px; /* Adjusted padding for smaller buttons */
+    font-size: 1rem; /* Reduced font size */
     background-color: #ffcc00;
     color: #121212;
     border: none;
@@ -92,8 +92,8 @@ table td {
     position: absolute;
     top: 20px;
     left: 20px;
-    padding: 10px 20px;
-    font-size: 1.2rem;
+    padding: 8px 16px; /* Adjusted padding for smaller buttons */
+    font-size: 1rem; /* Reduced font size */
     background-color: #ffcc00;
     color: #121212;
     border: none;
@@ -106,46 +106,47 @@ table td {
     background-color: #ffaa00;
 }
 
-/* Media Queries para Responsividad */
+h2 {
+    color: #5d7;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
     #logo-container img {
-        width: 80px;
+        width: 60px; /* Smaller logo for mobile */
     }
 
     #animation-container {
-        width: 90%;
+        width: 95%; /* Full width for mobile */
     }
 
     .slide {
-        font-size: 1.4rem;
-        line-height: 2rem;
+        font-size: 1.2rem; /* Smaller font size for mobile */
+        line-height: 1.8rem;
     }
 
     table {
-        font-size: 1rem;
+        font-size: 0.9rem; /* Smaller font size for mobile */
     }
 
-    table th, table td {
-        padding: 8px;
-    }
-
-    #reload-button {
-        font-size: 1rem;
-        padding: 8px 16px;
-    }
-
-    #pause-button {
-        font-size: 1rem;
-        padding: 8px 16px;
+    #reload-button, #pause-button {
+        font-size: 0.9rem; /* Smaller buttons for mobile */
+        padding: 6px 12px;
     }
 }
 
 @media (max-width: 480px) {
-    #logo-container img {
-        width: 60px;
+    .slide {
+        font-size: 1rem; /* Further reduce font size for very small screens */
+        line-height: 1.5rem;
     }
 
-    .slide {
-        font-size: 1.2rem;
-        line-height: 1.8rem;
+    table {
+        font-size: 0.8rem; /* Further reduce font size */
     }
+
+    #reload-button, #pause-button {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+}
